@@ -12,6 +12,10 @@
     text-decoration: none;
 }
 
+main {
+    background: #F4F7FC;
+}
+
 
 /******************* HEADER ********************/
 
@@ -222,7 +226,7 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
 /*******************STEPS- CONTAINER*******************/
 
 .steps-container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
