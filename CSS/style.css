@@ -13,7 +13,7 @@
 }
 
 
-/* HEADER */
+/******************* HEADER ********************/
 
 header {
     z-index: 98;
@@ -23,10 +23,9 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     background-color: #23252B;
-    /* background-image: linear-gradient(to bottom, #FF2525, #FFE53B); */
     box-shadow: 0 5PX 25PX rgb(0 0 0 / 20%);
     padding: 0 10%;
     transition: 0.6s;
@@ -54,7 +53,7 @@ header .navigation .menu-nav .menu-item > a {
     color: #fff;
     font-size: 12px;
     text-decoration: none;
-    margin: 20px;
+    margin: 10px;
     padding: 25px 0;
 }
 
@@ -111,6 +110,7 @@ header .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
     gap: 8px;
     cursor: pointer;
 }
@@ -126,7 +126,7 @@ header .buttons .btn-entrar {
     cursor: pointer;
 }
 
-.btn-registro {
+header .buttons .btn-registro {
     border-radius: 20px;
     color: var(--color-primary);
     padding: 5px 8px;
@@ -134,47 +134,10 @@ header .buttons .btn-entrar {
     cursor: pointer;
 }
 
-/* @media (max-width: 768px) {
-    header .logo {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-} */
+/******************* END HEADER ********************/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*SLIDER*/
+/*******************SLIDER*******************/
 
 main {
     z-index: 99;
@@ -254,14 +217,17 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
     margin-top: 30px;
 }
 
-/*steps-container*/
+/*******************END SLIDER*******************/
+
+/*******************STEPS- CONTAINER*******************/
 
 .steps-container {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .steps-container .steps {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -276,30 +242,36 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
 
 
 .steps-container .steps img {
-    width: 30%;
+    width: 20%;
     display: block;
     margin: 0 auto;
 }
 
 .steps-container .steps h3 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
+/*******************END STEPS- CONTAINER*******************/
 
 
 
-/*MEDIAQUERI*/
+
+/*******************MEDIAQUERI*******************/
 
 
 @media (max-width: 768px) {
 
+    /*******************HEADER*******************/
     header {
         /* height: 150px; */
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     header .buttons {
+        width: 90%;
         margin: 15px auto;
+        justify-content: center;
     }
 
     header .navigation .menu-nav {
@@ -378,7 +350,26 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
         left: 80%;;
     }
 
-    /*SLIDER*/
+    header .buttons .btn-entrar, 
+    header .buttons .btn-registro {
+        border-radius: 0;
+        width: 30%;
+        height: 35px;
+        border-radius: 3px;
+    }
+
+    header .buttons .btn-entrar {
+        background-color: var(--color-primary);
+    }
+
+    header .buttons .btn-registro {
+        background-color: #40b840;
+        color: #FFFFFF;
+    }
+
+    /*******************END HEADER*******************/
+
+    /*******************SLIDER*******************/
 
     main .slider-container .slider .slide .slide-content {
         top: 20%;
@@ -396,11 +387,15 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
         font-size: 16px;
     }
 
-    /*STEPS*/
+    /*******************END SLIDER*******************/
+
+    /*******************STEPS*******************/
 
     .steps-container .steps h3 {
         font-size: 16px;
     }
+
+    /*******************END STEPS*******************/
 
 }
 
@@ -408,17 +403,21 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
     .steps-container .steps h3 {
         font-size: 12px;
     }
+
+    .steps-container .steps img {
+        width: 35%;
+    }
+
+    header .buttons {
+        width: 100%;
+    }
 }
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    /* header {
-        height: 150px;
-        justify-content: space-evenly;
-    } */
-
+    
     header .logo{
-        width: 30%;
+        width: 12%;
     }
 
     header .navigation {

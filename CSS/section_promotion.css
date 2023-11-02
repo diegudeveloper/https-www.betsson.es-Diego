@@ -1,0 +1,178 @@
+:root {
+    --color-primary:    #FF6600;
+}
+
+.Daily_Posts  {
+    width: 100%;
+    /* background-color: #eee; */
+}
+
+.Daily_Posts h3 {
+    display: none;
+    width: 100%;
+    text-align: start;
+    padding: 20px 5%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-bottom: 1px solid var(--color-primary);
+    margin-bottom: 30px;
+}
+
+
+.container_daily {
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* overflow-x: scroll;
+    white-space: nowrap; */
+
+}
+
+/* .container_daily h3 {
+    display: none;
+    width: 100%;
+    text-align: start;
+    padding: 20px 5%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-bottom: 1px solid var(--color-primary);
+    margin-bottom: 30px;
+} */
+
+.container_daily h2 {
+    text-align: center;
+    padding: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.container_daily p {
+    width: 55%;
+    padding: 0.3rem 0;
+    font-size: 0.8rem;
+    line-height: 2;
+    color: #666;
+    margin: 0 auto;
+}
+
+.container_daily .card {
+    width: 80%;
+    max-width: 350px;
+    height: 390px;
+    margin: 25px 15px;
+    text-align: center;
+    /*border: 1px solid #fff;*/
+    /* padding: 10px; */
+    border: 1PX solid var(--color-primary);
+    transition: all 0.5s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.container_daily .card:hover {
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.container_daily .card:hover > img {
+    transform: scale(0.9);
+}
+
+.container_daily .card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    /* object-fit: cover; */
+    /* margin: 10px 0; */
+    transition: all 0.5s ease;
+}
+
+.container_daily .card .icono {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid var(--color-primary);
+}
+
+.container_daily .card .btn-button {
+    text-decoration: none;
+    padding: 12px 30px;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: var(--color-primary);
+    border: 0.1rem solid var(--color-primary);
+    color: #fff; 
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+   
+    .Daily_Posts  h3 {
+        width: 95%;
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+        border-bottom: 2px solid #FF6600;
+        margin: 5px auto;
+        margin-top: 60px;
+        color: #ff6600;
+        padding: 5px 0;
+    }
+
+    .Daily_Posts .todos a {
+        text-decoration: none;
+        color: #9B9B9B;
+        font-size: 13px;
+        float: right;
+        /* padding-top: 4px; */
+        padding-bottom: 0px;
+        text-decoration: none;
+    }
+
+    .container_daily {
+        width: 100%;
+        margin: 10px auto;
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+    .container_daily .card {
+        width: 320px;
+        height: 240px;
+    }
+
+    .container_daily .card img {
+        height: 100px;
+        object-fit: cover;
+    }
+        
+    .container_daily .card p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container_daily .card .btn-button {
+        padding: 8px 15px;
+        margin-top: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
