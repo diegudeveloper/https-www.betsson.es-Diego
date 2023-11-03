@@ -8,14 +8,34 @@
 }
 
 .section_destacados h3 {
-    display: none;
+    /* display: none;
     width: 100%;
     text-align: start;
     padding: 20px 5%;
     font-size: 1.5rem;
     font-weight: 300;
     border-bottom: 1px solid var(--color-primary);
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
+
+    width: 72%;
+    /* max-width: 1115px; */
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+    border-bottom: 2px solid rgb(255, 102, 0);
+    margin: 60px auto 5px;
+    color: rgb(255, 102, 0);
+    padding: 5px 0px;
+}
+
+.section_destacados .todos a {
+    text-decoration: none;
+    color: #9B9B9B;
+    font-size: 20px;
+    float: right;
+    /* padding-top: 4px; */
+    padding-bottom: 0px;
+    text-decoration: none;
 }
 
 
@@ -51,26 +71,62 @@
 }
 
 .section_destacados .container_daily p {
-    width: 55%;
-    padding: 0.3rem 0;
-    font-size: 0.8rem;
+    width: 40%;
+    padding: 3px;
+    font-size: 16px;
     line-height: 2;
-    color: #666;
+    color: #fff;
     margin: 0 auto;
+    font-weight: 700;
+    background-color: red;
 }
 
 .section_destacados .container_daily .card_desta {
     width: 280px;
-    height: 195px;
+    height: 220px;
     margin: 25px 0;
     text-align: center;
-    /*border: 1px solid #fff;*/
+    /* border: 1px solid #fff; */
     /* padding: 10px; */
     border: 1PX solid var(--color-primary);
     transition: all 0.5s ease;
     position: relative;
     display: inline-block;
+    overflow: hidden;
 }
+
+.section_destacados .container_daily .card_desta .content {
+    position: absolute;
+    top:-100%; left:0;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    background:rgba(0,0,0,.7);
+    padding:2rem;
+    padding-top: 1rem;
+    transition: all 0.5s ease;
+}
+
+.section_destacados .container_daily .card_desta .content h3 {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 50px;
+    display: inline-block;
+    background-color: var(--color-primary);
+    border: 0.1rem solid var(--color-primary);
+    cursor: pointer;
+}
+
+.section_destacados .container_daily .card_desta .content h3 a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.section_destacados .container_daily .card_desta:hover .content {
+    top: 0;
+}
+
+
 
 /* .section_destacados .container_daily .card_desta:hover {
     background-color: #fff;
@@ -87,7 +143,7 @@
 .section_destacados .container_daily .card_desta img {
     display: block;
     width: 280px;
-    height: 160px;
+    height: 140px;
     /* object-fit: cover; */
     /* margin: 10px 0; */
     transition: all 0.5s ease;
@@ -117,7 +173,7 @@
 
 @media (max-width: 1024px) {
    
-    .Daily_Posts  h3 {
+    .section_destacados  h3 {
         width: 95%;
         font-size: 16px;
         font-weight: 500;
@@ -129,7 +185,7 @@
         padding: 5px 0;
     }
 
-    .Daily_Posts .todos a {
+    .section_destacados .todos a {
         text-decoration: none;
         color: #9B9B9B;
         font-size: 13px;
