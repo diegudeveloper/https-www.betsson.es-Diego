@@ -306,7 +306,95 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
 
 
 @media (max-width: 1024px) {
+    header .container-header {
+        height: 100px;
+    }
 
+    header .container-header .conte-hijo {
+        /* height: 50%; */
+        justify-content: center;
+    }
+
+    header .container-header .menu-btn {
+        background: url(/asset/menu/menu-alt-right-regular-156\ \(1\).png);
+        /* width: 38px; */
+        height: 38px;
+        background-size: 30px;
+        background-position: center;
+        cursor: pointer;
+        /* position: absolute;
+        top: 20px;
+        left: 80%; */
+    }
+
+    header .container-header .btn-entrar {
+        width: 100px;
+        height: 50%;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .container-header .btn-registro {
+        width: 100px;
+        height: 50%;
+       font-size: 12px;
+    }
+
+    header .container-header .conte-hijo:nth-child(3) {
+        display: none;
+    }
+
+    header .container-header .conte-hijo:nth-child(4) {
+        display: block;
+    }
+
+    header .container-header .navigation .menu-nav {
+        position: fixed;
+        display: block;
+        background: #23252b;
+        min-width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 90px 50px;
+        overflow-y: auto;
+        transition: all 0.5s ease-in-out;
+        z-index: 100;
+    }
+
+    header .container-header .navigation .menu-nav.active {
+        right: 0;
+    }
+
+    header .container-header .navigation .menu-nav .menu-item:hover .sub-menu {
+        transform: translateX(10px);
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 30px;
+        background: url(/asset/menu/x-circle-solid-156.png)no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 46px;
+        background-position: center;
+    }
+
+    header .container-header .navigation .menu-nav .menu-item {
+        position: relative;
+    }
+
+    header .container-header .navigation .menu-nav .menu-item .sub-menu {
+        opacity: 1;
+        position: relative;
+        top: 0;
+        transform: translateX(10px);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -326,7 +414,18 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
         justify-content: center;
     }
 
-    header .container-header .navigation .menu-nav {
+    /* header .container-header .menu-btn {
+        width: 38px;
+        height: 38px;
+        background-position: center;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 80%;
+    } */
+
+
+    /* header .container-header .navigation .menu-nav {
         position: fixed;
         display: block;
         background: #23252b;
@@ -338,7 +437,7 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
         overflow-y: auto;
         transition: all 0.5s ease-in-out;
         z-index: 100;
-    }
+    } */
 
     header .container-header .conte-hijo:nth-child(4){
         display: block;
@@ -348,13 +447,13 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
         width: 50%;
     }
 
-    header .container-header .navigation .menu-nav.active {
+    /* header .container-header .navigation .menu-nav.active {
         right: 0;
-    }
+    } */
 
-    header .container-header .navigation .menu-nav .menu-item {
+    /* header .container-header .navigation .menu-nav .menu-item {
         position: relative;
-    }
+    } */
 
     header .container-header .navigation .menu-nav .menu-item .sub-menu {
         opacity: 1;
@@ -367,9 +466,9 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
         display: none;
     }
 
-    header .container-header .navigation .menu-nav .menu-item:hover .sub-menu {
+    /* header .container-header .navigation .menu-nav .menu-item:hover .sub-menu {
         transform: translateX(10px);
-    }
+    } */
 
     header .container-header .navigation .menu-nav .menu-item .sub-menu .sub-item {
         box-shadow: none;
@@ -384,7 +483,7 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
         transition: 0.3s;
     }
 
-    .close-btn {
+    /* .close-btn {
         position: absolute;
         top: 30px;
         background: url(/asset/menu/x-circle-solid-156.png)no-repeat;
@@ -392,7 +491,7 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
         height: 40px;
         background-size: 46px;
         background-position: center;
-    }
+    } */
 
     .menu-btn {
         background: url(/asset/menu/menu-alt-right-regular-156\ \(1\).png);
@@ -403,7 +502,7 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
         cursor: pointer;
         position: absolute;
         top: 20px;
-        left: 80%;;
+        left: 80%;
     }
 
     header .buttons .btn-entrar, 
