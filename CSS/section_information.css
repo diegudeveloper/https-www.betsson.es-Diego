@@ -21,12 +21,10 @@
     font-weight: 600;
 }
 
-
 .information .info_container p {
     font-size: 14px;
     font-weight: 300;
 }
-
 
 .accordion-toggle {
     display: none;
@@ -72,7 +70,6 @@
 .accordion-toggle:checked + .accordion-button + .accordion-content {
     max-height: 1000px;
 }
-
 
 
 @media (max-width: 1024px) {

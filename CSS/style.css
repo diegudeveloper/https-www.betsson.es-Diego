@@ -20,20 +20,48 @@ main {
 /******************* HEADER ********************/
 
 header {
-    z-index: 98;
+    
+    /* position: relative;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    /* max-width: 1920px; */
+    background-color: #23252B;
+    
+    /* align-items: center;
+    box-shadow: 0 5PX 25PX rgb(0 0 0 / 20%);
+     padding: 0 10%;
+    transition: 0.6s;
+    margin: 0 auto; */
+}
+
+header .container-header {
+    width: 80%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
-    align-items: center;
-    background-color: #23252B;
-    box-shadow: 0 5PX 25PX rgb(0 0 0 / 20%);
-    padding: 0 10%;
-    transition: 0.6s;
+    z-index: 98;
+
 }
+
+header .container-header .conte-hijo {
+    flex-grow: 1;
+}
+
+header .container-header .conte-hijo:nth-child(2){
+    flex-grow: 2;
+}
+
+header .container-header .conte-hijo:nth-child(4){
+    display: none;
+}
+
 
 header .logo img {
     width: 100px;
@@ -55,7 +83,7 @@ header .navigation .menu-nav {
 
 header .navigation .menu-nav .menu-item > a {
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     margin: 10px;
     padding: 25px 0;
@@ -103,7 +131,6 @@ header .navigation .menu-nav .menu-item .sub-menu .sub-item a {
 
 header .navigation .menu-nav .menu-item .sub-menu .sub-item:hover {
     background-color: #4080EF;
-    /* background-color: var(--color-primary); */
 }
 
 header .navigation .menu-nav .menu-item .sub-menu .sub-item:last-child:hover {
@@ -114,13 +141,14 @@ header .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
     gap: 8px;
     cursor: pointer;
 }
 
 header .buttons .btn-entrar {
-    width: 85px;
+    width: 152px;
+    height: 40px;
     background: #2E3541;
     border-radius: 20px;
     color: #fff;
@@ -130,12 +158,26 @@ header .buttons .btn-entrar {
     cursor: pointer;
 }
 
-header .buttons .btn-registro {
-    border-radius: 20px;
-    color: var(--color-primary);
-    padding: 5px 8px;
+header .buttons .btn-registro { 
+    background: #40B840;
+    border-radius: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 5px 10px;
     border: none;
-    cursor: pointer;
+    width: 152px;
+    height: 40px;
+}
+
+header .buttons .btn-registro a {
+    color: rgba(255, 255, 255, 0.870588);
 }
 
 /******************* END HEADER ********************/
@@ -263,22 +305,28 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
 /*******************MEDIAQUERI*******************/
 
 
+@media (max-width: 1024px) {
+
+}
+
 @media (max-width: 768px) {
 
     /*******************HEADER*******************/
+    header .container-header {
+        width: 100%;
+    }
     header {
-        /* height: 150px; */
         justify-content: space-between;
         flex-wrap: wrap;
     }
 
-    header .buttons {
+    header .container-header .buttons {
         width: 90%;
         margin: 15px auto;
         justify-content: center;
     }
 
-    header .navigation .menu-nav {
+    header .container-header .navigation .menu-nav {
         position: fixed;
         display: block;
         background: #23252b;
@@ -286,25 +334,29 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
         height: 100vh;
         top: 0;
         right: -100%;
-        /* right: 0; */
         padding: 90px 50px;
         overflow-y: auto;
-        /* justify-content: center;
-        list-style: none;
-        user-select: none; */
         transition: all 0.5s ease-in-out;
         z-index: 100;
     }
 
-    header .navigation .menu-nav.active {
+    header .container-header .conte-hijo:nth-child(4){
+        display: block;
+    }
+
+    header .container-header .conte-hijo:nth-child(1){
+        width: 50%;
+    }
+
+    header .container-header .navigation .menu-nav.active {
         right: 0;
     }
 
-    header .navigation .menu-nav .menu-item {
+    header .container-header .navigation .menu-nav .menu-item {
         position: relative;
     }
 
-    header .navigation .menu-nav .menu-item .sub-menu {
+    header .container-header .navigation .menu-nav .menu-item .sub-menu {
         opacity: 1;
         position: relative;
         top: 0;
@@ -315,19 +367,19 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
         display: none;
     }
 
-    header .navigation .menu-nav .menu-item:hover .sub-menu {
+    header .container-header .navigation .menu-nav .menu-item:hover .sub-menu {
         transform: translateX(10px);
     }
 
-    header .navigation .menu-nav .menu-item .sub-menu .sub-item {
+    header .container-header .navigation .menu-nav .menu-item .sub-menu .sub-item {
         box-shadow: none;
     }
 
-    header .navigation .menu-nav .menu-item .sub-menu .sub-item:hover {
+    header .container-header .navigation .menu-nav .menu-item .sub-menu .sub-item:hover {
         background: none;
     }
 
-    header .navigation .menu-nav .menu-item .sub-menu .sub-item a:hover {
+    header .container-header .navigation .menu-nav .menu-item .sub-menu .sub-item a:hover {
         color: #4080ef;
         transition: 0.3s;
     }
@@ -344,8 +396,8 @@ main .slider-container .slider .slide .slide-content button.btn-last:nth-last-ch
 
     .menu-btn {
         background: url(/asset/menu/menu-alt-right-regular-156\ \(1\).png);
-        width: 40px;
-        height: 40px;
+        width: 38px;
+        height: 38px;
         background-size: 30px;
         background-position: center;
         cursor: pointer;
