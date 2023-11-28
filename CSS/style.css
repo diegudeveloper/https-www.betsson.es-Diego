@@ -230,7 +230,7 @@ main .slider-container .slider .slide .slide-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 30px;
+    padding: 0 20px;
     display: none; /* Oculta por defecto el contenido */
   }
   
@@ -339,6 +339,13 @@ main .slider-container .next-button {
 
 
 /*******************MEDIAQUERI*******************/
+
+@media (max-width: 1440px) {
+    main .slider-container .slider .slide .slide-content {
+        left: 10%;
+    }
+
+}
 
 
 @media (max-width: 1024px) {
@@ -481,6 +488,7 @@ main .slider-container .next-button {
 
     header .container-header .conte-hijo:nth-child(1){
         width: 50%;
+        padding-left: 5%;
     }
 
     /* header .container-header .navigation .menu-nav.active {
@@ -537,8 +545,8 @@ main .slider-container .next-button {
         background-position: center;
         cursor: pointer;
         position: absolute;
-        top: 20px;
-        left: 80%;
+        top: 30px;
+        left: 90%;
     }
 
     header .buttons .btn-entrar, 
@@ -563,19 +571,28 @@ main .slider-container .next-button {
     /*******************SLIDER*******************/
 
     main .slider-container .slider .slide .slide-content {
-        top: 20%;
-        width: 80%;
-        height: 190px;
-        left: 40px;
+        top: 0%;
+        width: 100%;
+        height: 70px;
+        left: 0px;
+        padding: 0 30px;
     }
 
     main .slider-container .slider .slide .slide-content button {
-        width: 100px;
-        font-size: 15px;
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+        position: absolute;
+        left: 84%;
+    }
+
+    main .slider-container .slider .slide .slide-content h2 {
+        font-size: 12px;
+        padding-bottom: 0;
     }
 
     main .slider-container .slider .slide .slide-content p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     /*******************END SLIDER*******************/
@@ -591,6 +608,13 @@ main .slider-container .next-button {
 }
 
 @media (max-width: 425px) {
+    header .container-header {
+        height: 100px;
+    }
+
+    .menu-btn {
+        top: 4px;
+    }
     .steps-container .steps h3 {
         font-size: 12px;
     }
@@ -602,6 +626,24 @@ main .slider-container .next-button {
     header .buttons {
         width: 100%;
     }
+
+    main .slider-container .slider .slide .slide-content {
+        padding: 0 20px;
+    }
+
+    main .slider-container .slider .slide .slide-content button {
+        left: 77%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+    }
+
+    header .container-header .conte-hijo:nth-child(3) {
+        display: flex;
+        margin: 0;
+    }
+
 }
 
 
