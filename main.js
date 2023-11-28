@@ -24,25 +24,42 @@ closeBtn.addEventListener("click", () => {
 
 const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slider .slide");
+const prevButton = document.querySelector(".prev-button");
+const nextButton = document.querySelector(".next-button");
 
-let counter = 1;
+let counter = 0;
 const slideWidth = slides[0].clientWidth;
 
-function nextSlide() {
-  counter = (counter + 1) % slides.length;
-  slider.style.transform = `translateX(-${counter * slideWidth}px)`;
-  
-  // Ocultar el contenido de las otras diapositivas y mostrar el contenido de la diapositiva actual
-  slides.forEach((slide, index) => {
-    if (index === counter) {
-      slide.querySelector(".slide-content").style.display = "block";
+function showSlideContent(index) {
+  slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.querySelector(".slide-content").style.display = "flex";
     } else {
       slide.querySelector(".slide-content").style.display = "none";
     }
   });
 }
 
-setInterval(nextSlide, 3000); // Cambia de imagen cada 3 segundos
+function updateSlider() {
+  slider.style.transform = `translateX(-${counter * slideWidth}px)`;
+  showSlideContent(counter);
+}
+
+function nextSlide() {
+  counter = (counter + 1) % slides.length;
+  updateSlider();
+}
+
+function prevSlide() {
+  counter = (counter - 1 + slides.length) % slides.length;
+  updateSlider();
+}
+
+nextButton.addEventListener("click", nextSlide);
+prevButton.addEventListener("click", prevSlide);
+
+setInterval(nextSlide, 3000);
+
 
 //ACORDION//
 
