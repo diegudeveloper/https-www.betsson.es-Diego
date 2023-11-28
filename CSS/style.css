@@ -12,6 +12,12 @@
     text-decoration: none;
 }
 
+/* .container {
+    width: 80%;
+    max-width: 1170px;
+    margin: 0 auto;
+} */
+
 main {
     background: #F4F7FC;
 }
@@ -215,11 +221,11 @@ main .slider-container .slider .slide img {
   }
   
 main .slider-container .slider .slide .slide-content {
-    width: 455px;
+    width: 490px;
     height: 179px;
     position: absolute;
     top: 30%;
-    left: 50px;
+    left: 19%;
     background: rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: column;
