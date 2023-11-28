@@ -12,33 +12,15 @@
     text-decoration: none;
 }
 
-/* .container {
-    width: 80%;
-    max-width: 1170px;
-    margin: 0 auto;
-} */
-
 main {
     background: #F4F7FC;
 }
 
-
 /******************* HEADER ********************/
 
 header {
-    
-    /* position: relative;
-    top: 0;
-    left: 0; */
     width: 100%;
-    /* max-width: 1920px; */
     background-color: #23252B;
-    
-    /* align-items: center;
-    box-shadow: 0 5PX 25PX rgb(0 0 0 / 20%);
-     padding: 0 10%;
-    transition: 0.6s;
-    margin: 0 auto; */
 }
 
 header .container-header {
@@ -67,12 +49,6 @@ header .container-header .conte-hijo:nth-child(2){
 header .container-header .conte-hijo:nth-child(4){
     display: none;
 }
-
-
-/* header .logo img {
-    width: 100px;
-    height: 80px;
-} */
 
 header .navigation {
     position: relative;
@@ -207,18 +183,18 @@ main .slider-container {
 main .slider-container .slider {
     width: 300%;
     display: flex;
-  }
+}
   
 main .slider-container .slider .slide {
     width: 100%;
     position: relative;
-  }
+}
   
 main .slider-container .slider .slide img {
     width: 100%;
     height: 300px;
     object-fit: cover;
-  }
+}
   
 main .slider-container .slider .slide .slide-content {
     width: 490px;
@@ -231,8 +207,8 @@ main .slider-container .slider .slide .slide-content {
     flex-direction: column;
     justify-content: center;
     padding: 0 20px;
-    display: none; /* Oculta por defecto el contenido */
-  }
+    display: none;
+}
   
 main .slider-container .slider .slide .slide-content h2 {
     display: block;
@@ -241,13 +217,13 @@ main .slider-container .slider .slide .slide-content h2 {
     color: #ffffff;
     line-height: 42px;
     letter-spacing: 0px;
-  }
+}
   
 main .slider-container .slider .slide .slide-content p {
     font-size: 20px;
     color: #ffffff;
     line-height: 42px;
-  }
+}
   
 main .slider-container .slider .slide .slide-content button {
     display: inline-block;
@@ -261,15 +237,15 @@ main .slider-container .slider .slide .slide-content button {
     font-size: 18px;
     line-height: 37px;
     text-align: center;
-  }
+}
   
 main .slider-container .slider .slide .slide-content button.btn-last:nth-last-child(2) {
     margin-top: 30px;
-  }
+}
   
 main .slider-container .slider .slide .slide-content button.btn-last:nth-last-child(1) {
     margin-top: 30px;
-  }
+}
   
 main .slider-container .prev-button,
 main .slider-container .next-button {
@@ -297,31 +273,34 @@ main .slider-container .next-button {
     background-color: white;
     border-radius: 50%;
 }
-  
 
 /*******************END SLIDER*******************/
 
 /*******************STEPS- CONTAINER*******************/
 
 .steps-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .steps-container .steps {
-    width: 90%;
+    width: 80%;
+    max-width: 1170px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .steps-container .steps .step {
+    width: 80%;
     margin: 0 auto;
     text-align: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    margin: 5px;
 }
-
 
 .steps-container .steps img {
     width: 20%;
@@ -330,12 +309,10 @@ main .slider-container .next-button {
 }
 
 .steps-container .steps h3 {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /*******************END STEPS- CONTAINER*******************/
-
-
 
 
 /*******************MEDIAQUERI*******************/
@@ -345,8 +322,10 @@ main .slider-container .next-button {
         left: 10%;
     }
 
+    .steps-container .steps img {
+        width: 20%;
+    }
 }
-
 
 @media (max-width: 1024px) {
     header .container-header {
@@ -354,20 +333,15 @@ main .slider-container .next-button {
     }
 
     header .container-header .conte-hijo {
-        /* height: 50%; */
         justify-content: center;
     }
 
     header .container-header .menu-btn {
         background: url(/asset/menu/menu-alt-right-regular-156\ \(1\).png);
-        /* width: 38px; */
         height: 38px;
         background-size: 30px;
         background-position: center;
         cursor: pointer;
-        /* position: absolute;
-        top: 20px;
-        left: 80%; */
     }
 
     header .container-header .btn-entrar {
@@ -438,6 +412,10 @@ main .slider-container .next-button {
         overflow: hidden;
         display: none;
     }
+
+    .steps-container .steps h3 {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -457,31 +435,6 @@ main .slider-container .next-button {
         justify-content: center;
     }
 
-    /* header .container-header .menu-btn {
-        width: 38px;
-        height: 38px;
-        background-position: center;
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        left: 80%;
-    } */
-
-
-    /* header .container-header .navigation .menu-nav {
-        position: fixed;
-        display: block;
-        background: #23252b;
-        min-width: 100%;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        padding: 90px 50px;
-        overflow-y: auto;
-        transition: all 0.5s ease-in-out;
-        z-index: 100;
-    } */
-
     header .container-header .conte-hijo:nth-child(4){
         display: block;
     }
@@ -490,14 +443,6 @@ main .slider-container .next-button {
         width: 50%;
         padding-left: 5%;
     }
-
-    /* header .container-header .navigation .menu-nav.active {
-        right: 0;
-    } */
-
-    /* header .container-header .navigation .menu-nav .menu-item {
-        position: relative;
-    } */
 
     header .container-header .navigation .menu-nav .menu-item .sub-menu {
         opacity: 1;
@@ -509,10 +454,6 @@ main .slider-container .next-button {
         overflow: hidden;
         display: none;
     }
-
-    /* header .container-header .navigation .menu-nav .menu-item:hover .sub-menu {
-        transform: translateX(10px);
-    } */
 
     header .container-header .navigation .menu-nav .menu-item .sub-menu .sub-item {
         box-shadow: none;
@@ -527,16 +468,6 @@ main .slider-container .next-button {
         transition: 0.3s;
     }
 
-    /* .close-btn {
-        position: absolute;
-        top: 30px;
-        background: url(/asset/menu/x-circle-solid-156.png)no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 46px;
-        background-position: center;
-    } */
-
     .menu-btn {
         background: url(/asset/menu/menu-alt-right-regular-156\ \(1\).png);
         width: 38px;
@@ -546,7 +477,7 @@ main .slider-container .next-button {
         cursor: pointer;
         position: absolute;
         top: 30px;
-        left: 90%;
+        left: 89%;
     }
 
     header .buttons .btn-entrar, 
@@ -599,6 +530,10 @@ main .slider-container .next-button {
 
     /*******************STEPS*******************/
 
+    .steps-container .steps {
+        width: 90%;
+    }
+
     .steps-container .steps h3 {
         font-size: 16px;
     }
@@ -614,6 +549,10 @@ main .slider-container .next-button {
 
     .menu-btn {
         top: 4px;
+    }
+
+    .steps-container .steps {
+        width: 95%;
     }
     .steps-container .steps h3 {
         font-size: 12px;
