@@ -145,16 +145,17 @@
     }
 
     .container_daily {
-        width: 100%;
+        width: 80%;
         margin: 10px auto;
         overflow-x: scroll;
         white-space: nowrap;
-        display: inline-block;
+        display: block;
     }
 
     .container_daily .card {
         width: 305px;
         height: 240px;
+        margin-top: 1.5rem;
     }
 
     .container_daily .card img {
@@ -165,6 +166,7 @@
     .container_daily .card p {
         width: 100%;
         text-align: center;
+        font-size: 12px;
     }
 
     .container_daily .card .btn-button {
@@ -175,6 +177,10 @@
 
 
 @media (max-width: 768px) {
+
+    .container_daily {
+        width: 90%;
+    }
     .Daily_Posts h3 {
         width: 90%;
     }
