@@ -337,6 +337,7 @@ main .slider-container .next-button {
     }
 
     header .container-header .menu-btn {
+        /* background: url(/asset/menu/menu-alt-right-regular-156\ \(1\).png); */
         background: url(/asset/menu/menu-alt-right-regular-156\ \(1\).png);
         height: 38px;
         background-size: 30px;
