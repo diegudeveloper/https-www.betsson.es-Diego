@@ -73,10 +73,6 @@
 
 
 @media (max-width: 1024px) {
-    /* .information .info_container {
-        width: 90%;
-    } */
-
     .accordion-button {
         width: 20%;
         font-size: 15px;
