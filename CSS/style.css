@@ -137,7 +137,6 @@ header .buttons {
 header .buttons .btn-entrar {
     width: 152px;
     height: 40px;
-    /* background: #2E3541; */
     background-color: #40B840; ;
     border-radius: 20px;
     color: #fff;
@@ -148,7 +147,6 @@ header .buttons .btn-entrar {
 }
 
 header .buttons .btn-registro { 
-    /* background: #40B840; */
     background-color: var(--color-primary);
     border-radius: 100px;
     font-family: 'Open Sans', sans-serif;
@@ -343,7 +341,7 @@ main .slider-container .next-button {
     }
 
     header .container-header .menu-btn {
-        background: url(..asset/menu/menu-alt-right-regular-156\ \(1\).png);
+        background: url(../asset/menu/menu-alt-right-regular-156\ \(1\).png);
         height: 38px;
         background-size: 30px;
         background-position: center;
@@ -397,7 +395,7 @@ main .slider-container .next-button {
     .close-btn {
         position: absolute;
         top: 30px;
-        background: url(..asset/menu/x-circle-solid-156.png)no-repeat;
+        background: url(../asset/menu/x-circle-solid-156.png)no-repeat;
         width: 40px;
         height: 40px;
         background-size: 46px;
@@ -475,7 +473,7 @@ main .slider-container .next-button {
     }
 
     .menu-btn {
-        background: url(..asset/menu/menu-alt-right-regular-156\ \(1\).png);
+        background: url(../asset/menu/menu-alt-right-regular-156\ \(1\).png);
         width: 38px;
         height: 38px;
         background-size: 30px;
