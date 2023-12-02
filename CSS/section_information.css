@@ -8,7 +8,7 @@
 
 .information .info_container {
     width: 80%;
-    max-width: 1255px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -73,9 +73,9 @@
 
 
 @media (max-width: 1024px) {
-    .information .info_container {
-        width: 98%;
-    }
+    /* .information .info_container {
+        width: 90%;
+    } */
 
     .accordion-button {
         width: 20%;
