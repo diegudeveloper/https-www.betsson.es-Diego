@@ -92,7 +92,7 @@
 
 @media (max-width: 425px) {
     .information .info_container {
-        width: 98%;
+        width: 90%;
     }
 
     .accordion-button {

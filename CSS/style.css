@@ -12,7 +12,13 @@
     text-decoration: none;
 }
 
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
 main {
+    width: 100%;
     background: #F4F7FC;
 }
 
