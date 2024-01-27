@@ -22,15 +22,16 @@
 .section_destacados .todos a {
     text-decoration: none;
     color: #9B9B9B;
-    font-size: 20px;
+    font-size: 16px;
     float: right;
     padding-bottom: 0px;
     text-decoration: none;
+    padding-top: 10px;
 }
 
 .section_destacados  .container_daily {
     width: 80%;
-    max-width: 1315px;
+    max-width: 1170px;
     margin: 60px auto;
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +46,7 @@
 }
 
 .section_destacados .container_daily p {
-    width: 40%;
+    width: 30%;
     padding: 3px;
     font-size: 16px;
     line-height: 2;
@@ -53,18 +54,22 @@
     margin: 0 auto;
     font-weight: 700;
     background-color: red;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
 }
 
 .section_destacados .container_daily .card_desta {
     width: 280px;
-    height: 220px;
+    height: 195px;
     margin: 25px 0;
     text-align: center;
-    border: 1PX solid var(--color-primary);
+    /* border: 1PX solid var(--color-primary); */
     transition: all 0.5s ease;
     position: relative;
     display: inline-block;
     overflow: hidden;
+    background-color: #fff;
 }
 
 .section_destacados .container_daily .card_desta .content {
@@ -101,7 +106,7 @@
 .section_destacados .container_daily .card_desta img {
     display: block;
     width: 280px;
-    height: 140px;
+    height: 160px;
     transition: all 0.5s ease;
 }
 
@@ -130,7 +135,7 @@
 @media (max-width: 1024px) {
    
     .section_destacados  h3 {
-        width: 95%;
+        width: 80%;
         font-size: 16px;
         font-weight: 500;
         display: block;
@@ -151,11 +156,11 @@
     }
 
     .section_destacados .container_daily  {
-        width: 100%;
+        width: 80%;
         margin: 10px auto;
         overflow-x: scroll;
         white-space: nowrap;
-        display: inline-block;
+        display: block;
     }
 
     .section_destacados .container_daily .card {
@@ -178,3 +183,22 @@
         margin-top: 5px;
     }
 }
+
+@media (max-width: 768px) {
+   
+    .section_destacados  h3 {
+        width: 90%
+    }
+
+    .section_destacados .container_daily {
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .section_destacados .container_daily p {
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
