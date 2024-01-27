@@ -35,7 +35,7 @@
     margin: 60px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .section_destacados .container_daily .card_desta {
-    width: 280px;
+    width: 260px;
     height: 195px;
     margin: 25px 0;
     text-align: center;

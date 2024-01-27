@@ -110,6 +110,12 @@
     padding-top: 10px;
 }
 
+@media (min-width: 1025px) {
+    .container_daily .card {
+        width: 260px;
+    }
+}
+
 @media (max-width: 1024px) {
    
     .Daily_Posts  h3 {
